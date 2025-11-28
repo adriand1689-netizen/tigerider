@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>tigeRider ⚡🐯</title>
+  <style>
+    body { font-family: sans-serif; background: #2D2D2D; color: #fff; text-align: center; padding: 2rem; }
+    h1 { color: #D95D3A; }
+    .logo { font-size: 2.5rem; font-weight: bold; }
+    .lightning { color: #FFD700; }
+  </style>
+</head>
+<body>
+  <div class="logo">tige<span class="lightning">R</span>ider</div>
+  <h1>✈️ En construcción — Pronto: viajes, tips y aventuras en moto por Costa Rica 🇨🇷</h1>
+  <p>➡️ Sígueme en Instagram: <strong>@tigeRider</strong></p>
+</body>
+</html>
