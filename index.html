@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>tigeRider ⚡</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap');
-
     * {
       margin: 0;
       padding: 0;
@@ -28,27 +27,18 @@
       overflow: hidden;
     }
 
-    .logo {
-      font-family: 'Anton', sans-serif;
-      font-size: 5rem;
-      letter-spacing: -2px;
-      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    .logo-svg {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 0;
     }
 
-    .r-lightning {
+    .tagline {
+      text-align: center;
+      font-size: 1.2rem;
       color: #ffcc00;
-      position: relative;
-      display: inline-block;
-    }
-
-    .r-lightning::after {
-      content: "⚡";
-      position: absolute;
-      top: -0.3em;
-      right: -0.4em;
-      font-size: 0.7em;
-      transform: rotate(-15deg);
-      text-shadow: 0 0 8px #ffcc00;
+      margin-top: -0.5rem;
+      text-shadow: 0 0 6px rgba(0,0,0,0.5);
     }
 
     nav {
@@ -125,65 +115,5 @@
     }
 
     @media (max-width: 600px) {
-      .logo { font-size: 3.5rem; }
-      nav ul { gap: 1rem; flex-wrap: wrap; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      tige<span class="r-lightning">R</span>ider
-    </div>
-    <p>Motociclismo • Aventura • Costa Rica 🐯🏍️</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#viajes">Viajes</a></li>
-      <li><a href="#tips">Tips</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="viajes">
-      <h2>🛣️ Mis Rutas por Costa Rica</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Cerro de la Muerte</h3>
-          <p>Ruta épica entre San José y Cartago. Curvas, niebla y vistas al Irazú.</p>
-        </div>
-        <div class="card">
-          <h3>Ruta 32 a Limón</h3>
-          <p>Trópico, río, lluvia y selva. ¡Prepará la moto y el alma!</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="tips">
-      <h2>🔧 Tips para Motociclistas</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Lluvia en montaña</h3>
-          <p>Baja velocidad, frenos suaves, y ¡nunca uses el delantero bruscamente!</p>
-        </div>
-        <div class="card">
-          <h3>Mantenimiento semanal</h3>
-          <p>Cadena lubricada, neumáticos en presión y luces funcionando. Seguridad primero.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="galeria">
-      <h2>📸 Próximamente: Galería</h2>
-      <p>Pronto subiré fotos de mis viajes —¡sígueme en Instagram @tigeRider_CR para avances!</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>tigeRider ⚡ &copy; 2025 | Hecho con pasión y gasolina.</p>
-  </footer>
-</body>
-</html>
+      .logo-svg { padding: 1rem 0; }
+      nav ul { gap: 1
