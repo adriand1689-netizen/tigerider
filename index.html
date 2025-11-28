@@ -3,117 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>tigeRider ⚡</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <title>tigeRider 🐅⚡</title>
+  <meta name="description" content="Aventuras en moto por Costa Rica | Tips, viajes y estilo de vida sobre dos ruedas">
+  
+  <!-- Google Fonts (Oswald para títulos, más agresiva y moderna) -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon opcional (puedes cambiarlo más adelante) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>tigeRider</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="logo">tige<span class="r-lightning">R</span>ider</div>
+    <nav>
+      <a href="#viajes">Viajes</a>
+      <a href="#tips">Tips</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Oswald', sans-serif;
-      line-height: 1.6;
-    }
+  <main>
+    <section class="hero">
+      <h1>¡Bienvenido a <span>tigeRider</span>!</h1>
+      <p>Explorando Costa Rica sobre dos ruedas 🏍️ | Triumph Tiger | Aventura, estilo y libertad</p>
+      <a href="#viajes" class="btn">Ver mis viajes</a>
+    </section>
 
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(135deg, #ff8c00, #e65c00, #000);
-      position: relative;
-      overflow: hidden;
-    }
+    <section id="viajes" class="section">
+      <h2>🏔️ Mis Viajes</h2>
+      <p>De la selva caribeña a las montañas de Cerro de la Muerte — cada curva cuenta una historia.</p>
+    </section>
 
-    .logo-svg {
-      display: flex;
-      justify-content: center;
-      padding: 1.5rem 0;
-    }
+    <section id="tips" class="section">
+      <h2>🔧 Tips para Motociclistas</h2>
+      <p>Mantenimiento, seguridad, rutas recomendadas y cómo preparar tu moto para el trópico.</p>
+    </section>
 
-    .tagline {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #ffcc00;
-      margin-top: -0.5rem;
-      text-shadow: 0 0 6px rgba(0,0,0,0.5);
-    }
+    <section id="galeria" class="section">
+      <h2>📸 Galería</h2>
+      <p>(Próximamente: fotos de mis rutas por Arenal, Monteverde, Ruta 27 y más…)</p>
+    </section>
+  </main>
 
-    nav {
-      background: #111;
-      padding: 0.8rem;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 2rem;
-    }
-
-    nav a {
-      color: #ffaa00;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #fff;
-      text-shadow: 0 0 8px #ff8c00;
-    }
-
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-
-    section {
-      margin: 3rem 0;
-    }
-
-    h2 {
-      font-size: 2.2rem;
-      color: #ffaa00;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid #ff8c00;
-      padding-bottom: 0.5rem;
-      display: inline-block;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 1.5rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(255, 140, 0, 0.3);
-      border-color: #ff8c00;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #0a0a0a;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      .logo-svg { padding: 1rem 0; }
-      nav ul { gap: 1
+  <footer>
+    <p>© 2025 <strong>tigeRider</strong> 🐅⚡ | Costa Rica</p>
+  </footer>
+</body>
+</html>
