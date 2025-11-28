@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>tigeRider ⚡</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #ff8c00, #e65c00, #000);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo {
+      font-family: 'Anton', sans-serif;
+      font-size: 5rem;
+      letter-spacing: -2px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .r-lightning {
+      color: #ffcc00;
+      position: relative;
+      display: inline-block;
+    }
+
+    .r-lightning::after {
+      content: "⚡";
+      position: absolute;
+      top: -0.3em;
+      right: -0.4em;
+      font-size: 0.7em;
+      transform: rotate(-15deg);
+      text-shadow: 0 0 8px #ffcc00;
+    }
+
+    nav {
+      background: #111;
+      padding: 0.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #ffaa00;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 8px #ff8c00;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin: 3rem 0;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: #ffaa00;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #ff8c00;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(255, 140, 0, 0.3);
+      border-color: #ff8c00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0a0a0a;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .logo { font-size: 3.5rem; }
+      nav ul { gap: 1rem; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      tige<span class="r-lightning">R</span>ider
+    </div>
+    <p>Motociclismo • Aventura • Costa Rica 🐯🏍️</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#viajes">Viajes</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="viajes">
+      <h2>🛣️ Mis Rutas por Costa Rica</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Cerro de la Muerte</h3>
+          <p>Ruta épica entre San José y Cartago. Curvas, niebla y vistas al Irazú.</p>
+        </div>
+        <div class="card">
+          <h3>Ruta 32 a Limón</h3>
+          <p>Trópico, río, lluvia y selva. ¡Prepará la moto y el alma!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>🔧 Tips para Motociclistas</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Lluvia en montaña</h3>
+          <p>Baja velocidad, frenos suaves, y ¡nunca uses el delantero bruscamente!</p>
+        </div>
+        <div class="card">
+          <h3>Mantenimiento semanal</h3>
+          <p>Cadena lubricada, neumáticos en presión y luces funcionando. Seguridad primero.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>📸 Próximamente: Galería</h2>
+      <p>Pronto subiré fotos de mis viajes —¡sígueme en Instagram @tigeRider_CR para avances!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>tigeRider ⚡ &copy; 2025 | Hecho con pasión y gasolina.</p>
+  </footer>
+</body>
+</html>
